@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <!-- Name: Zachary Palmer
+      Date: 11/25/18
+      Assignment: 7
+      Class: GUI 1
+    -->
+<html>
+  <head>
+    <title>Homework 7 - GUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hw7.css">
+  </head>
+  <body>
+      <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+      <div id="input">
+      <h1 id="header">Magical Multiplication Table Generator</h1>
+      <form id="inputForm" name="inputForm"> <!--Input forms for the starting and ending indexes-->
+        <label for="num1">Beginning Index - Multiplier</label>
+        <input type="number" name="num1" id="num1" placeholder="Any positive number">
+
+        <label for="num1">Ending Index - Multiplier</label>
+        <input type="number" name="num2" id="num2" placeholder="Number greater than beginning">
+
+        <label for="num1">Beginning Index - Multiplicand</label>
+        <input type="number" name="num3" id="num3" placeholder="Any positive number">
+
+        <label for="num1">Ending Index - Multiplicand</label>
+        <input type="number" name="num4" id="num4" placeholder="Number greater than beginning">
+
+        <input type="submit" value="submit">
+        <div id="inputtedVals">  <!--Message area for input errors and output ranges-->
+        </div>
+      </form>
+    </div>
+    <div id="output">  <!--Output section for the table html-->
+        <table id=outputTable>
+
+        </table>
+    </div>
+    <script src="js/hw7.js"></script>
+  </body>
+</html>
